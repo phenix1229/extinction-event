@@ -16,9 +16,15 @@ function leaveEarth(){
 }
 
 function crashBoom(){
-  for (const items of olItems){
-    strike
-  }
+  for (const item of olItems){
+    item.style.textDecoration = 'line-through';
+  };
+  for (const item of ulItems){
+    item.style.opacity = '0';
+  };
+  for (const pic of pics){
+    pic.style.width = '0px';
+  };
 }
 
 olItems.forEach(item => {
